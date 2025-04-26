@@ -1,97 +1,131 @@
+/* === General Page Style === */
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    background: #ffffff; /* Pure white */
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .form-container {
-    background: #fdfdfd;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    width: 350px;
-    text-align: center;
-  }
-  
-  h2 {
-    margin-bottom: 10px;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .subtitle {
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  form label {
-    font-weight: bold;
-    margin: 10px 0 5px;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-  
-  form input:focus {
-    border-color: #5c6bc0;
-    box-shadow: 0 0 5px rgba(92, 107, 192, 0.4);
-  }
-  
-  button {
-    width: 100%;
-    padding: 12px;
-    background-color: #4b00ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #3600b3;
-  }
-  
-  .login-link {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .login-link a {
-    color: #4b00ff;
-    text-decoration: none;
-  }
-  
-  .login-link a:hover {
-    text-decoration: underline;
-  }
-  
-  #errorMsg {
-    color: red;
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #ffffff;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Form Container === */
+.form-container {
+  background: #fdfdfd;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+}
+
+/* === Heading === */
+h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* === Subtitle text === */
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* === Form styling === */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* === Label styling === */
+form label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* === Input fields === */
+form input {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-bottom: 10px;
+  outline: none;
+  box-sizing: border-box; /* Important: no overflow */
+}
+
+/* === Password Field Container === */
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* === Password Input inside Group === */
+.input-group input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* space for eye icon */
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* === Eye Button (Password Toggle) === */
+.password-group .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+}
+
+/* === Register Button === */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4b00ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3600b3;
+}
+
+/* === Login Link === */
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-link a {
+  color: #4b00ff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* === Error Message Styling === */
+#errorMsg {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
