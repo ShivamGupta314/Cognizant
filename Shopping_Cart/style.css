@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff9ec;
     margin: 0;
@@ -94,4 +94,78 @@ button.decrease, button.increase, button.remove {
 
 button.decrease:hover, button.increase:hover, button.remove:hover {
     background-color: #dc2626;
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.product {
+    background: #e9ecef;
+    border: 1px solid #ced4da;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.add-to-cart {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background: #0056b3;
+}
+
+#cart-table th {
+    background: #f1f3f5;
+    padding: 10px;
+}
+
+#cart-table td {
+    padding: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c82333;
 }
